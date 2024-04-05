@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var formData = new FormData(this);
 
     // Send form data to PHP script
-    fetch('https://emmanjokufoundation.org/emailsending/send_email.php', {
+    fetch('send_email.php', {
         method: 'POST',
         body: formData
     })
