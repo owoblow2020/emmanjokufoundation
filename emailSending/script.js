@@ -19,6 +19,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert(data); // Display the response from PHP script
     })
     .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
+        console.error('There was a problem with the fetch operation:', error.message);
+        alert('There was an error while sending the message. Please try again later.');
     });
 });
